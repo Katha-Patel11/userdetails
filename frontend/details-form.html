@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h2>Details Form</h2>
+        <form action="#" method="GET">
+          <label>Name </label><br />
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            class="inputs"
+            id="name"
+            required
+          /><br /><br />
+
+          <label>E-mail </label><br />
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            class="inputs"
+            id="email"
+            required
+          /><br /><br />
+
+          <label>Date of Birth </label><br />
+          <input
+            type="date"
+            name="dob"
+            placeholder="Enter your email"
+            class="inputs"
+            id="dob"
+            required
+          /><br /><br />
+
+          <label>Gender </label><br />
+          <select name="gender" id="gender">
+            <option selected disabled>None</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option></select
+          ><br /><br />
+
+          <label>Address </label><br />
+          <textarea
+            type="text"
+            name="address"
+            placeholder="Enter your address"
+            class="inputs"
+            id="address"
+            required
+          ></textarea
+          ><br /><br />
+
+          <label>Phone No </label><br />
+          <input
+            type="number"
+            name="phone_no"
+            class="inputs"
+            id="phone_no"
+            placeholder="Enter your phone no."
+            required
+          /><br /><br />
+
+          <label>Photo </label><br />
+          <input
+            type="file"
+            name="photo"
+            class="inputs"
+            accept=".jpg, .jpeg, .png"
+            id="photo"
+            placeholder="Enter your photo."
+            required
+          /><br /><br />
+
+          <button id="send">Send</button><br /><br />
+        </form>
+        <button id="display">Display all details</button><br /><br />
+        <table id="content"></table>
+        <script src="details.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
